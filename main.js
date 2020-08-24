@@ -74,6 +74,7 @@ function loadNextQ() {
     document.getElementById('formulaanswer').value = '';
     document.getElementById('chargeanswer').value = '';
     document.getElementById('qcount').innerHTML = 'Question ' + counter + ' out of ' + qs;
+    document.getElementById('formulaanswer').focus();
 }
 
 function loadEnd() {
