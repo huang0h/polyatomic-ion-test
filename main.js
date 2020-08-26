@@ -92,10 +92,10 @@ function loadEnd() {
 function shuffleQs(num) {
     for (j = 0; j < Math.ceil(num / compounds.length); j++) {
         shuffind = [];
-        for (var i = 0; i <= compounds.length; i++) {
+        for (var i = 0; i < compounds.length; i++) {
             shuffind.push(i);
         }
-        for (i = 0; i <= compounds.length; i++) {
+        for (i = 0; i < compounds.length; i++) {
             rand = Math.floor((Math.random() * shuffind.length));
             idxs.push(shuffind[rand]);
             shuffind.splice(rand, 1);
