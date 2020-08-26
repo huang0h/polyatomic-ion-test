@@ -69,7 +69,7 @@ function nextQ() {
 }
 
 function loadNextQ() {
-    idxs.splice(0, 1)
+    idxs.splice(0, 1);
     document.getElementById('name').innerHTML = compounds[idxs[0]];
     document.getElementById('formulaanswer').value = '';
     document.getElementById('chargeanswer').value = '';
@@ -91,8 +91,11 @@ function loadEnd() {
 
 function shuffleQs(num) {
     for (j = 0; j < Math.ceil(num / compounds.length); j++) {
-        var shuffind = ind
-        for (i = 0; i < 59; i++) {
+        shuffind = []
+        for (var i = 0; i <= compounds.length; i++) {
+            shuffind.push(i)
+        }
+        for (i = 0; i <= compounds.length; i++) {
             rand = Math.floor((Math.random() * shuffind.length))
             idxs.push(shuffind[rand])
             shuffind.splice(rand, 1)
@@ -101,7 +104,7 @@ function shuffleQs(num) {
 }
 
 
-//57 compounds
+//56 compounds
 compounds = [
     'Ammonium', 'Cesium', 'Copper (I)',
     'Potassium', 'Silver', 'Sodium',
@@ -168,10 +171,6 @@ charges = [
     '2+', '4+', '1-'   
 ]
 
-ind = []
-for (var i = 0; i < compounds.length; i++) {
-    ind.push(i)
-}
 
 idxs = []
 
