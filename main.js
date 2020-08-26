@@ -91,14 +91,14 @@ function loadEnd() {
 
 function shuffleQs(num) {
     for (j = 0; j < Math.ceil(num / compounds.length); j++) {
-        shuffind = []
+        shuffind = [];
         for (var i = 0; i <= compounds.length; i++) {
-            shuffind.push(i)
+            shuffind.push(i);
         }
         for (i = 0; i <= compounds.length; i++) {
-            rand = Math.floor((Math.random() * shuffind.length))
-            idxs.push(shuffind[rand])
-            shuffind.splice(rand, 1)
+            rand = Math.floor((Math.random() * shuffind.length));
+            idxs.push(shuffind[rand]);
+            shuffind.splice(rand, 1);
         }
     }
 }
@@ -125,7 +125,7 @@ compounds = [
     'Sulfite', 'Tartrate', 'Phosphate',
     'Phosphite', 'Nitride', 'Lead (IV)',
     'Tin (II)', 'Tin (IV)', 'Hypochlorite'
-]
+];
 
 formulas = [
     'NH4', 'Cs', 'Cu',
@@ -147,7 +147,7 @@ formulas = [
     'SO3', 'C4H4O6', 'PO4',
     'PO3', 'N', 'Pb',
     'Sn', 'Sn', 'ClO'
-]
+];
 
 charges = [
     '1+', '1+', '1+', 
@@ -169,11 +169,11 @@ charges = [
     '2-', '2-', '3-', 
     '3-', '3-', '4+',
     '2+', '4+', '1-'   
-]
+];
 
 
-idxs = []
+idxs = [];
 
-qs = 0
-counter = 1
-correct = 0
+qs = 0;
+counter = 1;
+correct = 0;
